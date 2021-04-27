@@ -1,3 +1,41 @@
 body {
   background: #8080807e;
 }
+body,
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: red;
+  font-weight: 500;
+}
+
+/* EXERCISE 1
+For all Albums we'd like to have a consistent style.
+Create a class for:
+- The album container
+- The album cover
+- The album title
+- The album group / singer / dj
+- The album genre
+- The album duration
+- etc
+*/
+.album-container {
+  background: #ff69b480;
+}
+.album-cover {
+  border-radius: 10px;
+}
+.album-title {
+  font-weight: bold;
+}
+.album-band {
+  font-weight: 800;
+}
+.album-genre {
+  font-style: italic;
+}
+.album-duration {
+  color: blue;
+}

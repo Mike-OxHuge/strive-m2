@@ -1,14 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="day2-styles.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="day2-styles.css" />
+
     <title>Day 2</title>
   </head>
   <body>
-    <h2>Day 2</h2>
-    <script src="/day2/day2.js"></script>
+    <!-- EXERCISE 2 
+    Implement a navigation bar using the bootstrap component
+    This navigation bar must link every section in your page
+-->
+    <nav
+      id="top"
+      class="navbar d-flex"
+      style="justify-content: space-around; background-color: #0000ff8c"
+    >
+      <div class="navbar-brand">
+        <h2>Mike's music</h2>
+      </div>
+      <h3>Day 2 homework</h3>
+      <ul style="list-style-type: none">
+        <li><a href="#link1">Link to good albums</a></li>
+        <li><a href="#link2">Link to album reviews</a></li>
+        <li><a href="#link3">Link to bad albums</a></li>
+        <li><a href="#link4">Link to an awesome musician</a></li>
+        <li><a href="#link5">Link to premature ending</a></li>
+      </ul>
+    </nav>
+    <!-- EXERCISE 3
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller viewport)
+            - 2 albums per row when you are on a small screen
+        -->
+    <div id="link1">
+      <h2>My favorite albums</h2>
+      <div class="container">
+        <div class="row" id="good-music-container">
+          <!-- good albums going here -->
+        </div>
+      </div>
+      <a href="#top">Back to top</a>
+    </div>
+
+    <!-- EXERCISE 4
+    Create a section for the album reviews.
+    Pick one of your fav albums, and create a section with:
+    - Cover
+    - Title
+    - Band
+    - Duration
+    - Genre
+    - Tracklist
+    - ... And whatever you think it's interesting about it!
+-->
+    <div id="link2">
+      <h2>Album reviews</h2>
+      <div class="container">
+        <div class="card album-container" style="width: 100vw">
+          <div class="d-flex">
+            <img
+              style="width: 50%"
+              class="card-img-top album-cover"
+              src="https://picsum.photos/800/600?random=66"
+              alt="Card image cap"
+            />
+            <div>
+              <ol id="track-list">
+                <!-- tracklist goes here -->
+              </ol>
+              <p class="px-5">
+                Something interesting about the album: Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Nisi temporibus ut libero,
+                qui iste tempora.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title album-title">The best album of all time</h5>
+            <div class="row">
+              <div class="col">
+                <span class="album-band">Band</span>
+              </div>
+              <div class="col">
+                <span class="album-genre">Genre</span>
+              </div>
+              <div class="col">
+                <span class="album-duration">Duration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#top">Back to top</a>
+    </div>
+
+    <!-- EXERCISE 5
+    Worst album list! Find out the music you don't really like or you find overrated and list it
+    in this "hall of shame" chart!
+-->
+    <div id="link3">
+      <h2>Disgusting music</h2>
+      <div class="container">
+        <div class="row" id="bad-music-container">
+          <!-- bad albums going here -->
+        </div>
+      </div>
+      <a href="#top">Back to top</a>
+    </div>
+
+<!-- EXERCISE 6
+    Do you have any musician / band you admire or you are a fan of?
+    This section is dedicated to him / her / them!
+    Feel free to experiment in this part of the page.
+-->
+<div id="link4">
+    <h2>Awesome musician</h2>
+      <div class="container">
+        <div class="card album-container" style="width: 100vw">
+          <div class="d-flex">
+            <img
+              style="width: 50%"
+              class="card-img-top album-cover"
+              src="https://picsum.photos/800/600?random=66"
+              alt="Card image cap"
+            />
+            <div>
+              <p class="px-5">Musician's bio, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quidem perspiciatis necessitatibus eum impedit atque recusandae aliquid. Voluptatum, aspernatur nulla!</p>
+              <p class="px-5">
+                Something interesting about the musician: Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Nisi temporibus ut libero,
+                qui iste tempora.
+              </p>
+              <p class="px-5">Reason why I like him/her/them: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium culpa reiciendis cum illum hic, deleniti asperiores. Ex cumque officia commodi!</p>
+              <ol id="best-tracks">
+                  <!-- best track going here -->
+              </ol>
+            </div>
+          </div>
+        </div> 
+
+        <div id="link5" class="mt-5">
+            <h6 style="text-align: center; font-weight: bolder; font-size: 3em;">I am bored, so 6 out of 11 seems to be enough</h6>
+        </div>
+
+    <script src="./day2.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+<!-- ASSIGNMENT RULES
+- The solution must be pushed to the repository and linked to EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers need inspiration.
+Spend 30 minutes surfing the web and searching the best way of rapresenting the album you love the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there. -->
