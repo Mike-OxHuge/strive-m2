@@ -22,6 +22,50 @@
     <!-- here -->
     <h1>Day 4</h1>
     <a href="/index.html">Back to home</a>
+    <div class="main-wrap d-flex">
+      <div class="input-and-users">
+        <div class="input-group">
+          <textarea
+            style="height: 20vh"
+            id="user-input"
+            class="form-control"
+            aria-label="With textarea"
+            placeholder="Input user names, divided by comma and space. Example: Boris, Doris, Rudolph"
+          ></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" id="submit-user-input">
+          Add users
+        </button>
+        <ul id="users-ul">
+          <!-- users going here -->
+        </ul>
+      </div>
+      <div class="teams" id="teams">
+        <input type="number" id="amount-of-teams" max="6" />
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="submit-amount-of-teams"
+        >
+          Create
+        </button>
+
+        <button type="button" class="btn btn-danger" id="assign">Assign</button>
+        <div id="container-for-teams"></div>
+      </div>
+    </div>
+    <h3>User manual and dummy names to copy and paste</h3>
+    <h5>
+      Input text into the field and click Add users, then select amount of teams
+      and click create. Then click assign.
+    </h5>
+    <p>
+      Boris, Doris, Michael Jackson, John Doe, Somebody else, Dunno who, Mystery
+      man, Ninja Turtle, Jihadist, Kebab Lover, Jesus Christ, Buddha, Some
+      Nordic God, Yoshi, Ryu, Ken, Barbie, Ronald Reagan, Ronald McDonald, Bruce
+      Wayne, Lil' Wayne, Batman, 50cent
+    </p>
+    <button type="button" class="btn btn-danger" id="reload">reload</button>
     <!-- my JS -->
     <script src="./day4.js"></script>
     <script
@@ -36,3 +80,9 @@
     ></script>
   </body>
 </html>
+
+<!-- didn't do these two:    
+    - Each team should be inside a "column" to be responsive.
+    - [EXTRA] Create a button to remove a user from a team, and putting him back in the main list, waiting 
+        to be reassigned. 
+-->
