@@ -1,3 +1,22 @@
 body {
-    background: #ffd90071;
+  background: #ffd90071;
+}
+a:link {
+  color: green;
+}
+/*a link the user has visited*/
+a:visited {
+  color: purple;
+}
+/*a link when the user mouses over it*/
+a:hover {
+  color: yellow;
+}
+/*a link the moment it is clicked*/
+a:active {
+  color: brown;
+}
+/* removed underline */
+a {
+  text-decoration: none;
 }
