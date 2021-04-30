@@ -48,9 +48,8 @@
       }
 
       .tvText {
-          color: white;
+        color: white;
       }
-      
     </style>
 
     <nav class="navbar navbar-expand-lg navBar navbar-dark">
@@ -108,38 +107,42 @@
 
     <div class="container-fluid tvGenres">
       <div class="col">
-        <div class="row">
-          <p class="h2 tvText">TV Shows</p>
-          <div class="dropdown">
-            <button
-              class="genresButton btn btn-secondary dropdown-toggle ml-4"
-              type="button genresButton"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Genres
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Romance</a>
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Comedy</a>
-              <a class="dropdown-item" href="#">Thriller</a>
+        <div class="row" style="justify-content: space-between">
+          <div class="d-flex">
+            <p class="h2 tvText">TV Shows</p>
+            <div class="dropdown">
+              <button
+                class="genresButton btn btn-secondary dropdown-toggle ml-4"
+                type="button genresButton"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Genres
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Romance</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Comedy</a>
+                <a class="dropdown-item" href="#">Thriller</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+
+          <div
+            class="btn-group btn-group-toggle float-right"
+            data-toggle="buttons"
+          >
             <label class="btn btn-secondary active">
-              <input type="radio" name="options" id="option1" checked> Active
+              <input type="radio" name="options" id="option1" checked /> Active
             </label>
             <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option2"> Radio
+              <input type="radio" name="options" id="option2" /> Radio
             </label>
           </div>
         </div>
       </div>
     </div>
-
-    
   </body>
 </html>
