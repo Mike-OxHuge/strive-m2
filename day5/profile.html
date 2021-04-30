@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./profile-styles.css" />
     <title>Profile</title>
   </head>
   <body>
-    <h1>Nothing to see here yet</h1>
+    <header style="position: relative; height: 20vh">
+      <img
+        src="./images/logo.png"
+        alt="logo"
+        style="width: 15vw; padding-top: 1vh; padding-left: 1vw"
+        class="fluid"
+      />
+    </header>
+    <div class="container d-flex flex-column">
+      <h1 class="text-white">Edit profile</h1>
+      <div
+        style="width: 100%; height: 2px; background-color: #333333"
+        class="mb-4"
+      ></div>
+      <div id="center-content" class="d-flex flex-row">
+        <div class="strive-logo-left">
+          <img
+            style="width: 100px; height: 100px"
+            src="https://strive.school/assets/strive_logo02.png"
+            alt="strive-logo"
+          />
+        </div>
+        <div id="right-section" class="ml-4">
+          <input
+            type="text"
+            placeholder="Username"
+            style="background-color: grey; color: white; font-weight: bold"
+          />
+          <!-- Large button groups (default and split) -->
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary btn-lg dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Large button
+            </button>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-secondary btn-lg" type="button">
+              Large split button
+            </button>
+            <button
+              type="button"
+              class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- my js -->
+    <script src="./profile.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
