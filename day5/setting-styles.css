@@ -1,0 +1,19 @@
+body {
+  background-color: #f3f3f3;
+}
+.navbar {
+  background-color: #000;
+}
+.ultra-hd {
+  border: 1px solid black;
+  padding: 0 2px;
+  font-size: 10px;
+}
+a {
+  display: block;
+  font-size: 14px;
+}
+/* .navbar a {
+  color: white;
+}
+ */
