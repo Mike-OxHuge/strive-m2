@@ -9,7 +9,7 @@
   </head>
   <style>
     body {
-        background-color: black;
+        background-color: #010101;
     }
     .navBar {
         background-color: rgb(14, 14, 14);
@@ -64,9 +64,6 @@
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#">TV Shows</a>
       </li>
       <li class="nav-item">
@@ -90,46 +87,47 @@
     </form>
   </div>
 </nav>
-<div class="container-fluid tvGenres">
-  <div class="col">
-    <div class="row" style="justify-content: space-between">
-      <div class="d-flex">
-        <p class="h2 tvText">TV Shows</p>
-        <div class="dropdown">
-          <button
-            class="genresButton btn btn-secondary dropdown-toggle ml-4"
-            type="button genresButton"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Genres
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Romance</a>
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Comedy</a>
-            <a class="dropdown-item" href="#">Thriller</a>
+<body>
+  <div class="container-fluid tvGenres">
+    <div class="col">
+      <div class="row" style="justify-content: space-between">
+        <div class="d-flex">
+          <p class="h2 tvText">TV Shows</p>
+          <div class="dropdown">
+            <button
+              class="genresButton btn btn-secondary dropdown-toggle ml-4"
+              type="button genresButton"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Genres
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Romance</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Comedy</a>
+              <a class="dropdown-item" href="#">Thriller</a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div
-        class="btn-group btn-group-toggle float-right"
-        data-toggle="buttons"
-      >
-        <label class="btn btn-secondary active viewButton">
-          <input type="radio" name="options" id="option1"/><img src="https://www.shareicon.net/data/512x512/2015/08/19/87493_grid_512x512.png" width="25px" height="25px">
-        </label>
-        <label class="btn btn-secondary viewButton">
-          <input type="radio" name="options" id="option2"/><img src="https://icon-library.com/images/menu-bars-icon/menu-bars-icon-3.jpg" width="25px" height="25px">
-        </label>
+  
+        <div
+          class="btn-group btn-group-toggle float-right"
+          data-toggle="buttons"
+        >
+          <label class="btn btn-secondary active viewButton">
+            <input type="radio" name="options" id="option1"/><img src="https://www.shareicon.net/data/512x512/2015/08/19/87493_grid_512x512.png" width="25px" height="25px">
+          </label>
+          <label class="btn btn-secondary viewButton">
+            <input type="radio" name="options" id="option2"/><img src="https://icon-library.com/images/menu-bars-icon/menu-bars-icon-3.jpg" width="25px" height="25px">
+          </label>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<body>
+</br>
     <h1 style="font-size: x-large; color: white; margin-left: 17px;">Trending Now</h1>
     <div class="container-fluid">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
