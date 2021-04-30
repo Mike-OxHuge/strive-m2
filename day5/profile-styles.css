@@ -27,4 +27,8 @@ a.dropdown-item {
   position: relative;
   top: 15%;
   left: 50%;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  box-sizing: content-box;
 }
