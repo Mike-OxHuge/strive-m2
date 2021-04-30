@@ -23,3 +23,8 @@ a.dropdown-item {
   margin-right: 1rem;
   border-radius: 0;
 }
+.icon-edit {
+  position: relative;
+  top: 15%;
+  left: 50%;
+}
