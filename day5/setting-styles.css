@@ -2,8 +2,9 @@ body {
   background-color: #f3f3f3;
   font-family: "Pontano Sans", sans-serif;
 }
-.navbar {
-  background-color: #000;
+.navBar {
+  background-color: rgb(14, 14, 14);
+  max-height: 60px;
 }
 .ultra-hd {
   border: 1px solid black;
@@ -14,7 +15,3 @@ a {
   display: block;
   font-size: 14px;
 }
-/* .navbar a {
-  color: white;
-}
- */

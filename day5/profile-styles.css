@@ -32,3 +32,6 @@ a.dropdown-item {
   padding: 3px;
   box-sizing: content-box;
 }
+.avatarDrop {
+  border: none;
+}
