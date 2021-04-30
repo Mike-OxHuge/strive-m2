@@ -48,13 +48,18 @@
       }
 
       .tvText {
-          color: white;
+        color: white;
       }
-      
+      .viewButton {
+        color: rgb(255, 255, 255);
+        background-color: rgb(14, 14, 14);
+        max-height: 30px;
+      }
+
     </style>
 
     <nav class="navbar navbar-expand-lg navBar navbar-dark">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="./day5-dashboard.html"
         ><img src="images/logo.png" alt="Netflix" width="110" height="30"
       /></a>
       <button
@@ -108,38 +113,75 @@
 
     <div class="container-fluid tvGenres">
       <div class="col">
-        <div class="row">
-          <p class="h2 tvText">TV Shows</p>
-          <div class="dropdown">
-            <button
-              class="genresButton btn btn-secondary dropdown-toggle ml-4"
-              type="button genresButton"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Genres
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Romance</a>
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Comedy</a>
-              <a class="dropdown-item" href="#">Thriller</a>
+        <div class="row" style="justify-content: space-between">
+          <div class="d-flex">
+            <p class="h2 tvText">TV Shows</p>
+            <div class="dropdown">
+              <button
+                class="genresButton btn btn-secondary dropdown-toggle ml-4"
+                type="button genresButton"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Genres
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Romance</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Comedy</a>
+                <a class="dropdown-item" href="#">Thriller</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-            <label class="btn btn-secondary active">
-              <input type="radio" name="options" id="option1" checked> Active
+
+          <div
+            class="btn-group btn-group-toggle float-right"
+            data-toggle="buttons"
+          >
+            <label class="btn btn-secondary active viewButton">
+              <input type="radio" name="options" id="option1"/><img src="https://www.shareicon.net/data/512x512/2015/08/19/87493_grid_512x512.png" width="25px" height="25px">
             </label>
-            <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option2"> Radio
+            <label class="btn btn-secondary viewButton">
+              <input type="radio" name="options" id="option2"/><img src="https://icon-library.com/images/menu-bars-icon/menu-bars-icon-3.jpg" width="25px" height="25px">
             </label>
           </div>
         </div>
       </div>
     </div>
-
-    
+    <footer class="pt-4 pb-0 mb-0 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Media Centre</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Audio and Subtitles</a></li>
+              <li><a class="text-muted" href="#">Investor Relations</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Help Centre</a></li>
+              <li><a class="text-muted" href="#">Jobs</a></li>
+              <li><a class="text-muted" href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Buy gift cards</a></li>
+              <li><a class="text-muted" href="#">Netflix Originals</a></li>
+              <li><a class="text-muted" href="#">Legal Notices</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cookie Preferences</a></li>
+              <li><a class="text-muted" href="#">Account</a></li>
+              <li><a class="text-muted" href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>
