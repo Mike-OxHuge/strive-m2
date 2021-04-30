@@ -20,16 +20,19 @@
   </head>
   <body>
     <header style="position: relative; height: 20vh">
-      <img
-        src="./images/logo.png"
-        alt="logo"
-        style="width: 15vw; padding-top: 1vh; padding-left: 1vw"
-        class="fluid"
-      />
+      <a href="./day5-dashboard.html">
+        <img
+          src="./images/logo.png"
+          alt="logo"
+          style="width: 15vw; padding-top: 1vh; padding-left: 1vw"
+          class="fluid"
+        />
+      </a>
     </header>
     <div class="container d-flex flex-column">
       <h1 class="text-white">Edit profile</h1>
       <div
+        id="divider"
         style="width: 100%; height: 2px; background-color: #333333"
         class="mb-4"
       ></div>
@@ -41,37 +44,96 @@
             alt="strive-logo"
           />
         </div>
-        <div id="right-section" class="ml-4">
+        <div
+          id="right-section"
+          class="ml-4 d-flex flex-column"
+          style="width: 80%"
+        >
           <input
             type="text"
             placeholder="Username"
             style="background-color: grey; color: white; font-weight: bold"
           />
-          <!-- Example single danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
+          <label
+            style="font-weight: bold; color: white; font-size: 1.3rem"
+            class="mt-2"
+            >Language:
+          </label>
+          <!-- dropdown -->
+          <div
+            class="btn-group align-self-start"
+            style="background-color: black; border: 1px white solid"
+          >
+            <button
+              type="button"
+              class="btn dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="color: white; font-weight: bold"
+            >
+              English US
+            </button>
+            <div
+              class="dropdown-menu"
+              style="background-color: black; border: 1px white solid"
+            >
+              <a class="dropdown-item" href="#">English UK</a>
+              <a class="dropdown-item" href="#">English AU</a>
+              <a class="dropdown-item" href="#">English Simplified</a>
+            </div>
+          </div>
+          <div
+            id="divider"
+            style="width: 100%; height: 2px; background-color: #333333"
+            class="my-4"
+          ></div>
+          <label
+            style="font-weight: bold; color: white; font-size: 1.3rem"
+            class="mt-2"
+            >Maturity Settings:
+          </label>
+          <a
+            href="https://help.netflix.com/de/node/2064"
+            target="_blank"
+            type="button"
+            class="btn"
+            style="width: 40%; background: #666666"
+          >
+            <span style="color: white; font-weight: bold">
+              ALL MATURITY RATINGS
+            </span>
+          </a>
+          <p class="pt-2" style="color: white">
+            Show titles of all maturity ratings for this profile
+          </p>
+          <button
+            class="btn"
+            style="border: 1px solid grey; width: 20%; border-radius: 0"
+          >
+            <span style="color: grey">EDIT</span>
+          </button>
+          <div
+            id="divider"
+            style="width: 100%; height: 2px; background-color: #333333"
+            class="my-4"
+          ></div>
+          <p>autoplay controls</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input
+                  type="checkbox"
+                  aria-label="Checkbox for following text input"
+                />
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Text input with checkbox"
+            />
+          </div>
         </div>
       </div>
     </div>

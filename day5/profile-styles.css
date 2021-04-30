@@ -4,6 +4,6 @@ body {
 hr {
   background-color: #333333;
 }
-a {
+a.dropdown-item {
   color: white;
 }
