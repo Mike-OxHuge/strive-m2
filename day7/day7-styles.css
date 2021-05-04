@@ -1,0 +1,52 @@
+/* EX1) Write a selector to target the title of the page */
+h1.display-4 {
+  /* ain't the best way, but I assume the point of the exercise is to select
+  elements using existing tags. However <h1> is supposed to be one per page.
+  so just h1 would do the job. But let's specify it with some other class given
+  by bootstrap. I hope nobody won't have class='display-4' on their h1 anywhere
+  else on this page */
+}
+/*  EX2) Write a selector to target every children of the navbar */
+header * {
+  /* I couldn't find navbar itself, so I assumed it was in the header */
+  /* color: #7fff00 !important; */
+  /* there's bunch of styles, including some !important out of the box by bootstrap
+  so it's kinda pointless to select them in this particular case. */
+}
+/*  EX3) Write a selector to target the "continue reading..." inside the jumbotron */
+.jumbotron div a {
+  /* again some !important styles already applied */
+}
+/* EX4) Write a selector to target the first blogpost */
+.blog-post:first-of-type {
+  background-color: yellow;
+  /* I hated it, :first-child didn't wanted to work at all */
+}
+/* EX5) Write a selector to target the "even" links in the navbar */
+nav a:nth-child(even) {
+  color: red !important;
+}
+/*  EX6) Write a selector to target the last blog post */
+.blog-post:last-of-type {
+  background-color: teal;
+}
+/* EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) */
+/* aint working. :first-child nor :first-of-type aint fucking working */
+
+/* EX8) Write a selector to target the second post author */
+.blog-post:nth-of-type(2) .blog-post-meta a {
+  color: red;
+}
+/*  EX9) Write a selector to target the "back to top" link     */
+footer a:last-of-type {
+  background-color: yellow;
+}
+/* #### EXTRA Try doing it without targeting the footer element directly */
+a:last-of-type {
+  color: pink;
+}
+
+/* EX10) Write a selector to target the footer */
+footer {
+  background-color: #1bc5c5;
+}
