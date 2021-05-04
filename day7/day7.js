@@ -97,6 +97,25 @@ window.onload = function () {
 // however I can select it with   let newer = document.querySelector(".blog-pagination").children[1];
 // and .children[0] for the button 'older'
 // and the button newer is disabled by default, not sure if onclick even would work. But I could get rid of it
-// but classList.remove('disabled')
+// by classList.remove('disabled')
 
 // EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
+const removeOld = function () {
+  let older = document.querySelector(".blog-pagination").children[0];
+  older.onclick = function () {
+    let latestPost = document.querySelector(".blog-post:last-of-type");
+    latestPost.remove();
+  };
+};
+removeOld();
+
+// EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+const dodgyAlert = function () {
+  let authors = document.querySelectorAll(".blog-post-meta a");
+  for (let i = 0; i < authors.length; i++) {
+    authors[i].addEventListener("mouseover", function () {
+      alert(`The author is: ${authors[i].innerText}`);
+    });
+  }
+};
+dodgyAlert();
