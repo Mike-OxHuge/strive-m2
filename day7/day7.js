@@ -93,6 +93,10 @@ window.onload = function () {
     newArticle.appendChild(newTitle);
     input.value = "";
   };
-};
+}; // oh boy I misread it and made a new button instead.
+// however I can select it with   let newer = document.querySelector(".blog-pagination").children[1];
+// and .children[0] for the button 'older'
+// and the button newer is disabled by default, not sure if onclick even would work. But I could get rid of it
+// but classList.remove('disabled')
 
 // EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
