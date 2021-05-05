@@ -20,6 +20,7 @@
     <title>M2D8 Ingrid&Mike</title>
   </head>
   <body>
+    <!-- Navbar needed to be nested in div.container -->
     <div class="container-fluid bg-primary">
       <nav
         class="navbar navbar-expand-sm navbar-dark bg-primary margin mx-auto"
@@ -47,6 +48,63 @@
           </ul>
         </div>
       </nav>
+    </div>
+
+    <!-- General container -->
+    <div class="container">
+      <!-- row for the title -->
+      <div class="row my-5">
+        <div class="col d-flex justify-content-center">
+          <h2 class="font-weight-lighter">Exercise 1</h2>
+        </div>
+      </div>
+      <!-- container for Exercice 1 -->
+      <div class="container">
+        <div 
+        class="row ex-1-heigh justify-content-center">
+          <div
+            id="ex1-green-box"
+            class="col-4 bg-success text-white text-center d-flex justify-content-center align-items-center"
+          >
+            <p>
+              First Column <br />
+              Height 400px; <br />
+              Green-ish background <br />
+              Text Centered <br />
+            </p>
+          </div>
+          <div id="ex1-blue-box"
+            class="col-2 bg-primary d-flex align-items-end justify-content-center"
+          >
+            <p class="font-weight-bold text-white mb-2">
+              Second Column <br />
+              Text To the botton <br />
+              Bold, blueish <br />
+              background
+            </p>
+          </div>
+          <div class="col-3 d-flex flex-column">
+            <div
+              id="yel-col-1"
+              class="row flex-grow-1 d-flex justify-content-center align-items-center"
+            >
+              <p class="font-weight-lighter">Third Column Part 1</p>
+            </div>
+            <div
+              id="yel-col-2"
+              class="row flex-grow-1 d-flex justify-content-center align-items-center"
+            >
+              <p class="font-weight-lighter">Third Column Part 2</p>
+            </div>
+            <div
+              id="yel-col-3"
+              class="row flex-grow-1 d-flex justify-content-center align-items-center"
+            >
+              <p class="font-weight-lighter">Third Column Part 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="/index.js"></script>
     <script

@@ -1,0 +1,29 @@
+.ex-1-heigh {
+  height: 400px;
+}
+
+#yel-col-1 {
+  background-color: #fff7bd;
+  border-top-right-radius: 40px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+#yel-col-2 {
+  background-color: #ffed69;
+  border-right: 1px solid black;
+}
+#yel-col-3 {
+  background-color: #fde54d;
+  border-bottom-right-radius: 40px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#ex1-green-box {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border: 1px solid black;
+}
+#ex1-blue-box {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
