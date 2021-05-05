@@ -46,5 +46,39 @@ window.onload = function () {
       `;
     toAppend.appendChild(card);
   }
-  console.log(toAppend.innerHTML);
+  let appendColsHere = document.getElementById("append-cols-here");
+  for (let i = 0; i < 9; i++) {
+    let n = Math.floor(Math.random() * 100 + 1);
+    let col = document.createElement("div");
+    col.classList.add("col-4");
+    col.classList.add("my-1");
+    col.innerHTML = `
+    
+    <div class="card">
+      <img
+        src="https://picsum.photos/450/200?random=${n}"
+        class="card-img-top"
+        alt="random image"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Here you can place your video description, in order to inform
+          the user of what to expect by clicking on the link
+        </p>
+        <div
+          class="d-flex flex-row"
+          style="justify-content: space-between"
+        >
+          <div>
+            <a href="#" class="btn text-muted">View</a>
+            <a href="#" class="btn text-muted">Edit</a>
+          </div>
+          <p class="text-muted mb-0 mt-2">9 mins</p>
+        </div>
+      </div>
+    </div>
+
+    `;
+    appendColsHere.appendChild(col);
+  }
 };
