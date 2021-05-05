@@ -1,0 +1,43 @@
+body {
+  background-color: #ffffff;
+}
+h6 {
+  font-weight: 600;
+}
+#ex-4-span::after {
+  content: "Secondary Text";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#ex-4-categories-row span {
+  display: block;
+}
+.ex-4-right-block-content {
+  padding: 1rem;
+}
+
+.ex-4-right-block {
+  border: 1px grey solid;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.ex-4-right-block-header {
+  background-color: #f7f7f7;
+  border-bottom: 1px grey solid;
+  text-align: left;
+  margin-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.ex-4-right-block-header span {
+  font-weight: 600;
+  padding-left: 0.7rem;
+}
+
+#ex-4-search-button {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  border: 2px grey solid;
+  padding: 0.1rem;
+}
