@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="day2-styles.css" />
+    <link rel="stylesheet" href="./exercise-styles.css" />
+
+    <title>Day 9</title>
+  </head>
+  <body>
+    <nav
+      id="top"
+      class="navbar d-flex"
+      style="justify-content: space-around; background-color: #0000ff8c"
+      aria-label="breadcrumb"
+    >
+      <div class="navbar-brand">
+        <h2>Mike's music</h2>
+      </div>
+      <h3>Day 9 homework</h3>
+      <a href="/index.html">Back to home</a>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#link1">Link to good albums</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#link2">Link to album reviews</a>
+        </li>
+        <li class="breadcrumb-item"><a href="#link3">Link to bad albums</a></li>
+        <li class="breadcrumb-item">
+          <a href="#link4">Link to an awesome musician</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#link5">Link to premature ending</a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- EXERCISE 2
+            Create a Jumbotron section with a quick explanation / image of the website
+            yeah let's create some jumbotron which is deprecated in bootstrap5 :D
+        -->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, visitor!</h1>
+      <img
+        src="https://picsum.photos/800/300?random=1"
+        alt="main photo"
+        class="w-100"
+        style="max-height: 50vh; background-position: center"
+      />
+      <hr class="my-4" />
+      <p>
+        Quick explanation Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Deserunt ex porro facilis inventore earum voluptatum ipsum officia
+        molestiae quisquam alias dignissimos totam, dolores soluta vitae.
+      </p>
+      <p class="lead">
+        <a
+          class="btn btn-primary btn-lg"
+          href="https://getbootstrap.com/docs/4.0/components/jumbotron/"
+          role="button"
+          >Learn more about deprecated jumbotron</a
+        >
+      </p>
+    </div>
+
+    <div id="link1">
+      <h2>My favorite albums</h2>
+      <div class="container">
+        <div class="row" id="good-music-container">
+          <!-- good albums going here -->
+        </div>
+      </div>
+      <a href="#top">Back to top</a>
+    </div>
+
+    <!-- EXERCISE 5
+            Place the tracklist inside a Bootstrap table.
+            The row column must be alternate.
+            Use one column for the track order, one of the title and one for the length.
+            (If you want, you can also add extra columns)
+        -->
+    <div id="link2">
+      <h2>Album reviews</h2>
+      <div class="d-flex container">
+        <div class="card album-container" style="width: 100vw">
+          <div class="d-flex">
+            <img
+              style="width: 50%"
+              class="card-img-top album-cover fluid"
+              src="https://picsum.photos/400/800?random=66"
+              alt="Card image cap"
+            />
+            <div class="row" style="max-width: 50%">
+              <div class="col-12">
+                <table class="table mb-5" style="max-width: 100%">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Trackname</th>
+                    </tr>
+                  </thead>
+                  <tbody id="track-list" class="">
+                    <!-- tracklist goes here -->
+                  </tbody>
+                </table>
+
+                <p class="px-5 mt-5">
+                  Something interesting about the album: Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Nisi temporibus ut libero,
+                  qui iste tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title album-title">The best album of all time</h5>
+            <div class="row">
+              <div class="col">
+                <span class="album-band">Band</span>
+              </div>
+              <div class="col">
+                <span class="album-genre">Genre</span>
+              </div>
+              <div class="col">
+                <span class="album-duration">Duration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#top">Back to top</a>
+    </div>
+
+    <div id="link3">
+      <h2>Disgusting music</h2>
+      <div class="container">
+        <div class="row" id="bad-music-container">
+          <!-- bad albums going here -->
+        </div>
+      </div>
+      <a href="#top">Back to top</a>
+    </div>
+
+    <div id="link4">
+      <h2>Awesome musician</h2>
+      <div class="container">
+        <div class="card album-container" style="width: 100vw">
+          <div class="d-flex">
+            <img
+              style="width: 50%"
+              class="card-img-top album-cover"
+              src="https://picsum.photos/800/600?random=66"
+              alt="Card image cap"
+            />
+            <div>
+              <p class="px-5">
+                Musician's bio, Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Aliquam quidem perspiciatis necessitatibus eum
+                impedit atque recusandae aliquid. Voluptatum, aspernatur nulla!
+              </p>
+              <p class="px-5">
+                Something interesting about the musician: Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Nisi temporibus ut libero,
+                qui iste tempora.
+              </p>
+              <p class="px-5">
+                Reason why I like him/her/them: Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Accusantium culpa reiciendis cum
+                illum hic, deleniti asperiores. Ex cumque officia commodi!
+              </p>
+              <ol id="best-tracks">
+                <!-- best track going here -->
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="link5" class="mt-5">
+      <h6 style="text-align: center; font-weight: bolder; font-size: 3em">
+        I am bored and tired and my linter stopped working, so 6 out of 11 seems
+        to be enough
+      </h6>
+    </div>
+
+    <script src="./day9.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
