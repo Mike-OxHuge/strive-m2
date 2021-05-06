@@ -104,7 +104,7 @@ window.onload = function () {
       rows[i + 1].classList.add("to-be-deleted");
       buttons[i].classList.add("d-none");
       setTimeout(() => rows[i + 1].remove(), 1500);
-    };
+    }; // arrow function can be replaced with following code: setTimeout(function() { rows[i + 1].remove()}, 1500)
   }
 
   let badContainer = document.getElementById("bad-music-container");
