@@ -1,0 +1,56 @@
+.styling-badge {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-color: grey;
+  color: blue;
+  border: chocolate 1px solid;
+  border-radius: 3px;
+}
+
+/* <!-- EXERCISE 6
+Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the 
+various pseudo-class states 
+which will apply for the subsequent button you'll use.
+Clicking on the button the row must disappear. 
+Add a fade-out effect using a CSS transition effect
+--> */
+.delete-button {
+  color: grey;
+  background-color: black;
+  border: chocolate 1px solid;
+  border-radius: 5px;
+  margin-right: 10%;
+}
+.delete-button:hover {
+  background-color: cyan;
+  border: darkmagenta 1px solid;
+  transform: scale(1.05);
+}
+.delete-button:active {
+  background-color: darkolivegreen;
+}
+.to-be-deleted {
+  background: rgb(0, 0, 0);
+  background: -moz-radial-gradient(
+    circle,
+    rgb(190, 10, 10) 0%,
+    rgba(179, 24, 24, 0.844) 21%,
+    rgba(145, 24, 24, 0.682) 54%,
+    rgba(148, 54, 54, 0.404) 81%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+  animation-name: fadeOut;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
