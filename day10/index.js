@@ -24,3 +24,4 @@ window.onload = function () {
     rowForCards.appendChild(card);
   }
 };
+console.log("Giving up at debrief");
